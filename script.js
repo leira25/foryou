@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tapCount++;
 
     // Check if tap count has reached 11
-    if (tapCount === 1) {
+    if (tapCount === 11) {
       heading.textContent = "Flowers for you, love!"; // Change h1 text
       flower.style.display = 'block'; // Show the flower
       createConfetti(); // Show confetti
