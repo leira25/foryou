@@ -5,27 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Love Letter Surprise</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Include canvas-confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-  <div class="letter-container">
-    <h1>My Love Letter to You</h1>
-    <p id="love-letter">
-      <!-- You can put your love letter here -->
+  <div class="letter-container" id="letter-container">
+    <h1>Tap 11 Times</h1>
+   <center><img id="flower" class="hidden" src="tulips.png" alt="Flower" />
+    <p id="love-letter" class="hidden">
+      <!-- Your love letter goes here -->
       Dear [Her Name],<br><br>
       Words cannot express how much you mean to me. Every moment with you feels like a dream, and I am so grateful to have you in my life. You are my sunshine, my confidant, and my best friend. I love you more each day.<br><br>
       Forever yours,<br>
       [Your Name]
     </p>
-    <button id="show-flowers">Click to reveal the bouquet</button>
-    <div class="flowers" id="flowers">
-      🌸🌹🌺💐🌻🌷🌼🌸
-    </div>
   </div>
   
   <!-- Background Music -->
-<!--   <audio id="background-music" loop>
-    <source src="your-music-file.mp3" type="audio/mp3">
-  </audio> -->
+  <audio id="background-music" loop>
+    <source src="mymusic.mp3" type="audio/mp3">
+  </audio>
 
   <script src="script.js"></script>
 </body>
