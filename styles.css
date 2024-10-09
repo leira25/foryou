@@ -1,59 +1,58 @@
 /* styles.css */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #ffefef;
-    font-family: 'Courier New', monospace;
-  }
-  
-  .letter-container {
-    text-align: center;
-    max-width: 600px;
-    padding: 20px;
-    border: 2px solid #f08080;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffefef;
+  font-family: 'Courier New', monospace;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.letter-container {
+  text-align: center;
+  max-width: 90%; /* Responsive width */
+  padding: 20px;
+  border: 2px solid #f08080;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #f08080;
+  font-size: 2em;
+}
+
+#flower {
+  margin-top: 20px;
+  width: 200px; /* Set flower image width */
+  display: none; /* Hide the flower initially */
+  height: auto;
+}
+
+#love-letter {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.hidden {
+  display: none; /* Hide elements with this class */
+}
+
+/* Mobile responsive text */
+@media (max-width: 600px) {
   h1 {
-    color: #f08080;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   
   #love-letter {
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #333;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
     font-size: 1em;
-    background-color: #f08080;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
   }
-  
-  button:hover {
-    background-color: #ff6f61;
+
+  #flower {
+    width: 350px; /* Adjust flower width for mobile */
   }
-  
-  .flowers {
-    margin-top: 20px;
-    font-size: 3em;
-    display: none;
-    animation: reveal 1s ease-in-out forwards;
-  }
-  
-  @keyframes reveal {
-    from { opacity: 0; transform: scale(0.5); }
-    to { opacity: 1; transform: scale(1); }
-  }
-  
+}
