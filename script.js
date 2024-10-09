@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to show love letter and play music
   function showLoveLetter() {
+    heading.textContent = "Happy 1st Anniversary, Love!"; // Change h1 text to anniversary message
     loveLetter.classList.remove('hidden'); // Show the love letter
     music.play(); // Start playing the music
   }
